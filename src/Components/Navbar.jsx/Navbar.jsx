@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
-import "./Navbar.css"
-
+import "./Navbar.css";
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 ">
+    <div className="relative p-[3px] mt-5 rounded-4xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 gradient-move">
+      <div className="navbar bg-base-100 rounded-4xl p-5">
       <div className="navbar-start">
+        {/* dropdown */}
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -31,33 +32,33 @@ const Navbar = () => {
             <li>
               <Link
                 to="#"
-                className="relative group text-gray-800 dark:text-white"
+                className="relative group  text-gray-800 "
               >
                 Item 1
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li>
               <Link
                 to="#"
-                className="relative group text-gray-800 dark:text-white"
+                className="relative group text-gray-800 "
               >
                 Item 2
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li>
               <Link
                 to="#"
-                className="relative group text-gray-800 dark:text-white"
+                className="relative group text-gray-800 "
               >
                 Item 3
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
           </ul>
         </div>
-        <Link className=" text-xl font-bold bitcount-font">
+        <Link className=" text-3xl font-bold logo-font">
           <span className="text-violet-500">Shahariar</span>
           <span className="text-red-400">Arafat</span>
         </Link>
@@ -67,35 +68,69 @@ const Navbar = () => {
           <li>
             <Link
               to="#"
-              className="relative group text-gray-800 dark:text-white"
+              className="relative text-xl group text-gray-800 "
             >
               Item 1
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black   transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="relative group text-gray-800 dark:text-white"
+              className="relative text-xl group text-gray-800 "
             >
               Item 2
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black   transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="relative group text-gray-800 dark:text-white"
+              className="relative text-xl group text-gray-800 "
             >
               Item 3
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black   transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Theme</a>
+        <label className="flex cursor-pointer gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+          </svg>
+          <input
+            type="checkbox"
+            value="synthwave"
+            className="toggle theme-controller"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </label>
       </div>
+    </div>
     </div>
   );
 };

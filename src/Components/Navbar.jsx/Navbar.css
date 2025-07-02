@@ -1,4 +1,35 @@
+.logo-font {
+  font-family: "WDXL Lubrifont SC", sans-serif;
+}
+.custom-class {
+  background: linear-gradient(
+    90deg,
+    #40ffaa,
+    #4079ff,
+    #40ffaa,
+    #4079ff,
+    #40ffaa
+  );
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+/* Navbar.css */
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-.bitcount-font {
-  font-family: "Bitcount Grid Double", system-ui;
+.gradient-border {
+  background-size: 300% 300%;
+  animation: gradient-move 6s ease infinite;
 }
