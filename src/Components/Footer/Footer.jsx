@@ -1,56 +1,131 @@
+'use client';
 import React from 'react';
-
+import { Link } from 'react-router';
 const Footer = () => {
-    return (
-        <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-  <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <div className="grid grid-flow-col gap-4">
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-  <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-  </aside>
-</footer>
-    );
-};
+  
+  
+  return (
+    <>
+      <div
+        className="relative h-full sm:pt-14 pt-8 bg-[#f7f7f7] text-black">
+        <div className="sm:container  px-4 mx-auto">
+          <div className="md:flex justify-between w-full">
+            <div>
+              <h1 className="md:text-4xl text-2xl font-semibold">
+                Let&lsquo;s do great work together
+              </h1>
+              <div className="pt-2 pb-6 md:w-99  ">
+                <p className="md:text-2xl text-xl  py-4">
+                  Sign up for our newsletter*
+                </p>
+                <div className=" hover-button relative bg-black flex justify-between items-center border-2 overflow-hidden  border-black rounded-full  text-white hover:text-black md:text-2xl">
+                  <form
+                    className="relative z-2 grid grid-cols-6  w-full h-full">
+                    <input
+                      type="email"
+                      name="newsletter_email"
+                      className="border-none bg-transparent  py-3 px-6  col-span-5"
+                      placeholder="Your Email * "
+                    />{' '}
+                    <button
+                      type="submit"
+                      className="cursor-pointer w-full hover:bg-primaryColor bg-white text-white h-full cols-span-1">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        className="w-full h-[80%] "
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                          fill="#000"
+                          fillRule="evenodd"
+                          clipRule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-10">
+              <ul>
+                <li className="text-2xl pb-2 text-black font-semibold">
+                  SITEMAP
+                </li>
+                <li className="text-xl font-medium">
+                  <Link href="/">Home</Link>
+                </li>
+                <li className="text-xl font-medium">
+                  <Link href="/about">About us</Link>
+                </li>
+                <li className="text-xl font-medium">
+                  <Link href="/services">Our Services</Link>
+                </li>
 
+                <li className="text-xl font-medium">
+                  <Link href="/projects">Projects</Link>
+                </li>
+                <li className="text-xl font-medium">
+                  <Link href="/blogs">Blogs</Link>
+                </li>
+                <li className="text-xl font-medium">
+                  <Link href="/contact-us">Contact</Link>
+                </li>
+              </ul>
+              <ul>
+                <li className="text-2xl pb-2 text-black font-semibold">
+                  SOCIAL
+                </li>
+                <li className="text-xl font-medium">
+                  <a
+                    href="https://www.linkedin.com/company/next-codez/"
+                    target="_blank"
+                    className="underline">
+                    LinkedIn
+                  </a>
+                </li>
+                <li className="text-xl font-medium">
+                  <a
+                    href="https://twitter.com/NextCodez"
+                    target="_blank"
+                    className="underline">
+                    Twitter
+                  </a>
+                </li>
+                <li className="text-xl font-medium">
+                  <a
+                    href="https://www.instagram.com/nextcodez/"
+                    target="_blank"
+                    className="underline">
+                    Instagram
+                  </a>
+                </li>
+                <li className="text-xl font-medium">
+                  <a
+                    href="https://www.facebook.com/nextcodezz"
+                    target="_blank"
+                    className="underline">
+                    Facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-y-2 md:py-4 border-gray-200">
+            
+          </div>
+          <div className="flex md:flex-row flex-col-reverse gap-3 justify-between py-2">
+            <span className="font-medium">
+              &copy; 2023 NextCodez. All Rights Reserved.
+            </span>
+            <a href="#" className="font-semibold">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 export default Footer;
