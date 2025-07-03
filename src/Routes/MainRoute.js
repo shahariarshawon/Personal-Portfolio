@@ -8,6 +8,7 @@ export const router = createBrowserRouter(
         {
             path: "/",
             Component: FrontLayout,
+        
         },
         {
             path: "/home",
