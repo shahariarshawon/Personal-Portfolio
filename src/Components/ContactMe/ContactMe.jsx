@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaRedditAlien,
+  FaGithub,
 } from 'react-icons/fa';
 
 const ContactSection = () => {
@@ -35,8 +36,7 @@ const ContactSection = () => {
 
   return (
     <section className="mb-10 text-center px-4">
-      <div className="max-w-md mx-auto bg-violet-100  text-black  rounded-xl shadow-lg p-8">
-
+      <div className="max-w-md mx-auto bg-violet-100 text-black rounded-xl shadow-lg p-8">
         {/* Heading */}
         <h2 className="text-2xl font-bold mb-6">Let's Get in Touch</h2>
 
@@ -47,14 +47,14 @@ const ContactSection = () => {
             name="user_email"
             placeholder="Your Email"
             required
-            className="w-full px-4 py-2 mb-4 border bg-gray-100  text-black  border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
+            className="w-full px-4 py-2 mb-4 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
           />
           <textarea
             name="message"
             rows="4"
             placeholder="Your Message"
             required
-            className="w-full px-4 py-2 mb-4 border bg-gray-100  text-black  border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
+            className="w-full px-4 py-2 mb-4 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
           />
           <button
             type="submit"
@@ -113,6 +113,14 @@ const ContactSection = () => {
             className="bg-orange-500 p-3 rounded-full hover:bg-orange-600 transition"
           >
             <FaRedditAlien />
+          </a>
+          <a
+            href="https://github.com/shahariarshawon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition"
+          >
+            <FaGithub />
           </a>
         </div>
       </div>
