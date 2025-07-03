@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
-import { Outlet } from 'react-router';
+// import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
+import Banner from '../Components/Banner/Banner';
 
 const MainLayout = () => {
     return (
@@ -10,7 +11,7 @@ const MainLayout = () => {
             <Navbar></Navbar>
             </div>
             <div className="min-h-screen">
-            <Outlet></Outlet>
+            <Banner></Banner>
             </div>
             <Footer></Footer>
         </div>

@@ -1,0 +1,18 @@
+.fancy-text h2 {
+  text-shadow:
+    0 0 5px rgb(218, 231, 249),
+    0 0 10px rgb(218, 231, 249),
+    0 0 20px rgb(218, 231, 249),
+    0 0 40px rgb(218, 231, 249);
+  color: white;
+}
+
+.fancy-text p {
+  text-shadow:
+    0 0 5px rgb(218, 231, 249),
+    0 0 10px rgb(218, 231, 249),
+    0 0 20px rgb(218, 231, 249);
+}
+.font2 {
+  font-family: "Tektur", sans-serif;
+}

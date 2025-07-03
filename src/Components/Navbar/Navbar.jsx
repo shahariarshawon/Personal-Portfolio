@@ -67,7 +67,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link className=" text-3xl font-bold logo-font">
+        <Link className=" text-3xl font-bold logo-font hidden md:inline-block">
           <span className="text-sky-400">Shahariar</span>
           <span className="text-emerald-400">Arafat</span>
         </Link>
