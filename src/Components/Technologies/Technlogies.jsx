@@ -55,7 +55,7 @@ const SkillCard = ({ logo, name, level, exp, color }) => {
 const SkillsGallery = () => {
   return (
     <div className="mt-10 flex items-center justify-center px-4">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl">
         {skills.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}

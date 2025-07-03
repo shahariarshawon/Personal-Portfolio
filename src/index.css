@@ -8,3 +8,6 @@
   --color-primary: #00809D;
   --color-secondary: white;
 }
+html {
+  scroll-behavior: smooth;
+}

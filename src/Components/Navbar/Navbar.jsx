@@ -30,28 +30,28 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to="#" className="relative group  text-gray-800 ">
+                <a href="#" className="relative group  text-gray-800 ">
                   Home
                   <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#" className="relative group text-gray-800 ">
+                <a href="#projects" className="relative group text-gray-800 ">
                   Projects
                   <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#" className="relative group text-gray-800 ">
+                <a href="#about" className="relative group text-gray-800 ">
                   About
                   <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#" className="relative group text-gray-800 ">
+                <a href="#contact" className="relative group text-gray-800 ">
                   Contact
                   <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -63,28 +63,28 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="space-x-6 flex">
             <li>
-              <Link to="#" className="relative text-xl group  ">
+              <a href="#" className="relative text-xl group  ">
                 Home
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#" className="relative text-xl group  ">
+              <a href="#projects" className="relative text-xl group  ">
                 Projects
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#" className="relative text-xl group  ">
+              <a href="#about" className="relative text-xl group  ">
                 About
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#" className="relative text-xl group  ">
+              <a href="#contact" className="relative text-xl group  ">
                 Contact Me
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

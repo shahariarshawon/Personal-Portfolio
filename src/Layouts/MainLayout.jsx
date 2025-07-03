@@ -24,7 +24,7 @@ const MainLayout = () => {
         <div className="min-h-screen">
           <Banner></Banner>
           {/* Featured Projects Part */}
-          <div className=" my-10 ">
+          <section id="projects" className=" my-10 ">
             <div className='text-center mb-10'>
         <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
           Featured Projects
@@ -37,35 +37,35 @@ const MainLayout = () => {
             
           
         </div>
-          </div>
+          </section>
           {/* About Me */}
-          <div className="">
+          <section id="about" >
             <div className='text-center mb-10'>
         <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
           About Me
         </h1>
       </div>
             <AboutMe></AboutMe>
-          </div>
+          </section>
           {/* Technolog */}
-          <div>
+          <section id="technology">
             <div className='text-center mb-10'>
         <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
           Technologies 
         </h1>
       </div>
       <Technologies></Technologies>
-          </div>
+          </section>
           {/* contact me */}
 
-          <div>
+          <section id="contact">
             <div className='text-center mb-10'>
         <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
           Contact Me 
         </h1>
       </div>
             <ContactMe></ContactMe>
-          </div>
+          </section>
         </div>
         <Footer></Footer>
       </PageWrapper>
