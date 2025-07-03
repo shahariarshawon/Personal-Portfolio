@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const FrontBanner = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center font2">
+    <div className="min-h-screen flex items-center justify-center font2 ">
       <div className="text-center text-white fancy-text space-y-4">
         <h2 className="text-6xl md:text-8xl font-extrabold">Hello!</h2>
         <h2 className="text-6xl md:text-8xl font-extrabold">
