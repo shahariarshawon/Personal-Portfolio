@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <div className="relative p-[3px] mt-5 rounded-4xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 gradient-move">
+    <div className="relative mt-5 rounded-4xl p-[3px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate-gradient-x shadow-xl ">
       <div className="navbar bg-base-100 rounded-4xl p-5">
       <div className="navbar-start">
         {/* dropdown */}
@@ -34,8 +34,8 @@ const Navbar = () => {
                 to="#"
                 className="relative group  text-gray-800 "
               >
-                Item 1
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+                Home
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li>
@@ -43,8 +43,8 @@ const Navbar = () => {
                 to="#"
                 className="relative group text-gray-800 "
               >
-                Item 2
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+                Projects
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
             <li>
@@ -52,15 +52,24 @@ const Navbar = () => {
                 to="#"
                 className="relative group text-gray-800 "
               >
-                Item 3
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+                About
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="#"
+                className="relative group text-gray-800 "
+              >
+                Contact
+                <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black  transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
           </ul>
         </div>
         <Link className=" text-3xl font-bold logo-font">
-          <span className="text-violet-500">Shahariar</span>
-          <span className="text-red-400">Arafat</span>
+          <span className="text-sky-400">Shahariar</span>
+          <span className="text-emerald-400">Arafat</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -68,28 +77,37 @@ const Navbar = () => {
           <li>
             <Link
               to="#"
-              className="relative text-xl group text-gray-800 "
+              className="relative text-xl group  "
             >
-              Item 1
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
+              Home
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="relative text-xl group text-gray-800 "
+              className="relative text-xl group  "
             >
-              Item 2
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
+              Projects
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="relative text-xl group text-gray-800 "
+              className="relative text-xl group  "
             >
-              Item 3
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
+              About
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              className="relative text-xl group  "
+            >
+              Contact Me
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400   transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
         </ul>
