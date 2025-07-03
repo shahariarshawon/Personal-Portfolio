@@ -9,6 +9,7 @@ import FeaturedProjects from "../Components/FeaturedProjects/FeaturedProjects";
 import { useLoaderData } from "react-router";
 import AboutMe from "../Components/AboutMe/AboutMe";
 import Technologies from "../Components/Technologies/Technlogies";
+import ContactMe from "../Components/ContactMe/ContactMe";
 
 const MainLayout = () => {
     const projects=useLoaderData();
@@ -54,6 +55,16 @@ const MainLayout = () => {
         </h1>
       </div>
       <Technologies></Technologies>
+          </div>
+          {/* contact me */}
+
+          <div>
+            <div className='text-center mb-10'>
+        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
+          Contact Me 
+        </h1>
+      </div>
+            <ContactMe></ContactMe>
           </div>
         </div>
         <Footer></Footer>
