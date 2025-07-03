@@ -7,6 +7,7 @@ import PageWrapper from "../Components/PageWrapper";
 import CursorDot from "../Components/CursorDot";
 import FeaturedProjects from "../Components/FeaturedProjects/FeaturedProjects";
 import { useLoaderData } from "react-router";
+import AboutMe from "../Components/AboutMe/AboutMe";
 
 const MainLayout = () => {
     const projects=useLoaderData();
@@ -17,8 +18,10 @@ const MainLayout = () => {
         <div>
           <Navbar></Navbar>
         </div>
+        {/* Banner */}
         <div className="min-h-screen">
           <Banner></Banner>
+          {/* Featured Projects Part */}
           <div className=" my-10 ">
             <div className='text-center mb-10'>
         <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
@@ -32,6 +35,15 @@ const MainLayout = () => {
             
           
         </div>
+          </div>
+          {/* About Me */}
+          <div className="">
+            <div className='text-center mb-10'>
+        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
+          About Me
+        </h1>
+      </div>
+            <AboutMe></AboutMe>
           </div>
         </div>
         <Footer></Footer>
