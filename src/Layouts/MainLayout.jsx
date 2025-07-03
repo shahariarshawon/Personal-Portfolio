@@ -8,6 +8,7 @@ import CursorDot from "../Components/CursorDot";
 import FeaturedProjects from "../Components/FeaturedProjects/FeaturedProjects";
 import { useLoaderData } from "react-router";
 import AboutMe from "../Components/AboutMe/AboutMe";
+import Technologies from "../Components/Technologies/Technlogies";
 
 const MainLayout = () => {
     const projects=useLoaderData();
@@ -44,6 +45,15 @@ const MainLayout = () => {
         </h1>
       </div>
             <AboutMe></AboutMe>
+          </div>
+          {/* Technolog */}
+          <div>
+            <div className='text-center mb-10'>
+        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
+          Technologies 
+        </h1>
+      </div>
+      <Technologies></Technologies>
           </div>
         </div>
         <Footer></Footer>
