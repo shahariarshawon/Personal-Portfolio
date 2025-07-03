@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronsRight } from 'lucide-react';
-import profileImage from "../../assets/project-photos/cropper.jpg";
+import profileImage from "/project-photos/cropper.jpg";
 
 function Index() {
   const [showDetails, setShowDetails] = useState(false);
