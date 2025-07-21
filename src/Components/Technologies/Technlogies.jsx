@@ -16,6 +16,9 @@ const skills = [
   { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg', level: 'Intermediate', exp: '2 years', color: 'indigo-500' },
   { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg', level: 'Intermediate', exp: '2 years', color: 'blue-500' },
   { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg', level: 'Advanced', exp: '3 years', color: 'yellow-300' },
+  {
+    name:'PHP', logo:'https://i.ibb.co/N2234C7R/new-php-logo.png', level:'Intermediate', exp:'2 years', color: 'teal-400'
+  }
 ];
 
 // Tailwind-compatible color to class map

@@ -1,37 +1,47 @@
 [
   {
     "id": "1",
-    "title": "Roommate Finder",
-    "description": "A modern web app that helps users find compatible roommates. Users can create posts, like others' listings, and manage their profiles.",
-    "liveLink": "https://roommate-finder-93b81.web.app/",
-    "image": "https://i.postimg.cc/SsxcYz2h/roommate-Finder.png"
+    "title": "Daily Drafts",
+    "description": "Explore insightful blogs, write your own, and be a part of an ever-growing community of thinkers.",
+    "liveLink": "https://blog-site-c0adb.web.app",
+    "image": "https://i.postimg.cc/G3YcTDZH/Screenshot-from-2025-07-21-10-24-40.png"
+    
   },
   {
     "id": "2",
-    "title": "English Janala",
-    "description": "Unlock Your Potential with English Janala – Learn English Easily, Anytime, Anywhere!",
-    "liveLink": "https://english-janala-shahariarfarzu.netlify.app/",
-    "image": "https://i.postimg.cc/3x2Xsh5P/english-janala-1.png"
+    "title": "Roommate Finder",
+    "description": "A modern web app that helps users find compatible roommates. Users can create posts, like others' listings, and manage their profiles.",
+    "liveLink": "https://roommate-finder-93b81.web.app",
+    "image": "https://i.postimg.cc/SsxcYz2h/roommate-Finder.png"
+
   },
   {
     "id": "3",
-    "title": "LawDotBD",
-    "description": "Find the right lawyer, get legal advice, and solve your legal problems — all in one place.",
-    "liveLink": "https://law-dot-bd.netlify.app/",
-    "image": "https://i.postimg.cc/BvgxvCvp/lawdotbd-1.png"
+    "title": "English Janala",
+    "description": "Unlock Your Potential with English Janala – Learn English Easily, Anytime, Anywhere!",
+    "liveLink": "https://english-janala-shahariarfarzu.netlify.app",
+    "image": "https://i.postimg.cc/3x2Xsh5P/english-janala-1.png"
   },
   {
     "id": "4",
-    "title": "Auction Gallery",
-    "description": "Discover, bid, and own timeless masterpieces and exclusive collectibles from around the world.",
-    "liveLink": "https://auction-gallery-shahariarfarzu.netlify.app/",
-    "image": "https://i.postimg.cc/B67HTQH1/auctiongallery-1.png"
+    "title": "LawDotBD",
+    "description": "Find the right lawyer, get legal advice, and solve your legal problems — all in one place.",
+    "liveLink": "https://law-dot-bd.netlify.app",
+    "image": "https://i.postimg.cc/BvgxvCvp/lawdotbd-1.png"
   },
   {
     "id": "5",
+    "title": "Auction Gallery",
+    "description": "Discover, bid, and own timeless masterpieces and exclusive collectibles from around the world.",
+    "liveLink": "https://auction-gallery-shahariarfarzu.netlify.app",
+    "image": "https://i.postimg.cc/B67HTQH1/auctiongallery-1.png"
+  },
+  {
+    "id": "6",
     "title": "Nature's Platter",
     "description": "Discover the goodness of nature with Nature’s Platter.",
     "liveLink": "https://shahariarshawon.github.io/programming-hero-assignment-03/",
     "image": "https://i.postimg.cc/g0dVd7Gr/natures-platter-1.png"
   }
+  
 ]

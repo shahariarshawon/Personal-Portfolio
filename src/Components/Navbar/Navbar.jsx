@@ -91,6 +91,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <label className="flex cursor-pointer gap-2">
             <svg
+              className="hidden md:inline-block"
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
@@ -110,6 +111,7 @@ const Navbar = () => {
               className="toggle theme-controller"
             />
             <svg
+              className="hidden md:inline-block"
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"

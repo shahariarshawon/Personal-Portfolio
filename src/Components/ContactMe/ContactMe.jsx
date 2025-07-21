@@ -1,5 +1,4 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
+import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -8,28 +7,24 @@ import {
   FaTwitter,
   FaRedditAlien,
   FaGithub,
-} from 'react-icons/fa';
+} from "react-icons/fa";
+import { Bounce, toast } from "react-toastify";
 
 const ContactSection = () => {
-  const sendEmail = (e) => {
+  const handleSendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'your_service_id',     // replace with actual
-        'your_template_id',    // replace with actual
-        e.target,
-        'your_public_key'      // replace with actual
-      )
-      .then(
-        () => {
-          alert('✅ Message sent successfully!');
-        },
-        (error) => {
-          console.error(error.text);
-          alert('❌ Failed to send message. Please try again.');
-        }
-      );
+    toast("Thank you! You message has been sent Successfully.", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
 
     e.target.reset();
   };
@@ -41,7 +36,7 @@ const ContactSection = () => {
         <h2 className="text-2xl font-bold mb-6">Let's Get in Touch</h2>
 
         {/* Contact Form */}
-        <form onSubmit={sendEmail}>
+        <form onSubmit={handleSendEmail}>
           <input
             type="email"
             name="user_email"
@@ -56,11 +51,31 @@ const ContactSection = () => {
             required
             className="w-full px-4 py-2 mb-4 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
           />
+
           <button
             type="submit"
-            className="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 rounded-md transition"
+            class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-lg shadow-md group"
           >
-            Send Message
+            <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </span>
+            <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+              Send Message
+            </span>
+            <span class="relative invisible">Send Message</span>
           </button>
         </form>
 
