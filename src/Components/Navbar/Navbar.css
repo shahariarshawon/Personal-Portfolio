@@ -15,3 +15,14 @@
   background-size: 200% 200%;
   animation: gradient-x 4s ease infinite;
 }
+.resume-btn {
+  position: relative;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: whitesmoke;
+  background: linear-gradient(to right, #7577f2, #39b4ec, #3dd7a4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
