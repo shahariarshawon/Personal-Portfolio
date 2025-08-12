@@ -27,12 +27,17 @@ function FeaturedProjects({ project }) {
         {/* CONTENT SECTION */}
         <a href={project.liveLink} target="_blank">
         <article className="p-4 space-y-2">
-          <div className="h-8 w-20 bg-[#a7b0e0] rounded-md"></div>
+          
           <h1 className="text-xl font-semibold capitalize">{project.title}</h1>
           <p className="text-base hidden md:inline-block leading-[120%] text-[#3a3a3a]">
             {project.description}
           </p>
-          <a
+          <br />
+          <p className="text-base hidden md:inline-block leading-[120%] text-[#3a3a3a]">
+            <span className="font-bold">Stack:</span> {" "}{project.stack}
+          </p>
+          <div className="flex ">
+            <a
             href={project.liveLink}
             target="_blank"
             className="text-base text-[#6a73b8] font-medium group-hover:opacity-100 opacity-0 translate-y-2 group-hover:translate-y-0 pt-2 flex gap-1 transition-all duration-300"
@@ -42,6 +47,17 @@ function FeaturedProjects({ project }) {
               <ChevronRight />
             </span>
           </a>
+          <a
+            href={project.githubLink}
+            target="_blank"
+            className="text-base text-[#6a73b8] font-medium group-hover:opacity-100 opacity-0 translate-y-2 group-hover:translate-y-0 pt-2 flex gap-1 transition-all duration-300"
+          >
+            GitHub
+            <span>
+              <ChevronRight />
+            </span>
+          </a>
+          </div>
         </article>
         </a>
       </div>

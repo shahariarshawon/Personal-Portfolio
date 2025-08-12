@@ -32,7 +32,18 @@ const MainLayout = () => {
       </div>
             <AboutMe></AboutMe>
           </section>
-          {/* Featured Projects Part */}
+         
+          
+          {/* Technolog */}
+          <section id="technology">
+            <div className='text-center mb-10'>
+        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
+          Technologies 
+        </h1>
+      </div>
+      <Technologies></Technologies>
+          </section>
+           {/* Featured Projects Part */}
           <section id="projects" className=" my-10 ">
             <div className='text-center mb-10'>
         <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
@@ -46,16 +57,6 @@ const MainLayout = () => {
             
           
         </div>
-          </section>
-          
-          {/* Technolog */}
-          <section id="technology">
-            <div className='text-center mb-10'>
-        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
-          Technologies 
-        </h1>
-      </div>
-      <Technologies></Technologies>
           </section>
           {/* contact me */}
 
