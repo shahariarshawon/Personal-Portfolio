@@ -11,6 +11,7 @@ import AboutMe from "../Components/AboutMe/AboutMe";
 import Technologies from "../Components/Technologies/Technlogies";
 import ContactMe from "../Components/ContactMe/ContactMe";
 import Education from "../Components/Education/Education";
+import Experience from "../Components/Experience/Experience";
 
 const MainLayout = () => {
     const projects=useLoaderData();
@@ -47,6 +48,10 @@ const MainLayout = () => {
           {/* Education */}
           <section>
             <Education></Education>
+          </section>
+           {/* Education */}
+          <section>
+            <Experience></Experience>
           </section>
            {/* Featured Projects Part */}
           <section id="projects" className=" my-10 ">
