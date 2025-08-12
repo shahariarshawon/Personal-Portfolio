@@ -10,6 +10,7 @@ import { useLoaderData } from "react-router";
 import AboutMe from "../Components/AboutMe/AboutMe";
 import Technologies from "../Components/Technologies/Technlogies";
 import ContactMe from "../Components/ContactMe/ContactMe";
+import Education from "../Components/Education/Education";
 
 const MainLayout = () => {
     const projects=useLoaderData();
@@ -17,7 +18,7 @@ const MainLayout = () => {
     <div className="w-3/4 mx-auto logo-font">
       <PageWrapper>
         <CursorDot></CursorDot>
-        <div>
+        <div className="sticky top-0 z-50">
           <Navbar></Navbar>
         </div>
         {/* Banner */}
@@ -42,6 +43,10 @@ const MainLayout = () => {
         </h1>
       </div>
       <Technologies></Technologies>
+          </section>
+          {/* Education */}
+          <section>
+            <Education></Education>
           </section>
            {/* Featured Projects Part */}
           <section id="projects" className=" my-10 ">

@@ -2,24 +2,32 @@ import React from 'react';
 
 // Add brand-aligned colors manually
 const skills = [
-  { name: 'Node.js', logo: 'https://icon.icepanel.io/Technology/svg/Node.js.svg', level: 'Expert', exp: '4 years', color: 'green-500' },
-  { name: 'Express.js', logo: 'https://icon.icepanel.io/Technology/png-shadow-512/Express.png', level: 'Advanced', exp: '3 years', color: 'gray-700' },
-  { name: 'Vercel', logo: 'https://icon.icepanel.io/Technology/png-shadow-512/Vercel.png', level: 'Intermediate', exp: '2 years', color: 'neutral-900' },
+  // Frontend & UI
   { name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg', level: 'Expert', exp: '4 years', color: 'cyan-400' },
-  { name: 'Vite', logo: 'https://vitejs.dev/logo.svg', level: 'Advanced', exp: '2 years', color: 'purple-500' },
   { name: 'JavaScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png', level: 'Expert', exp: '5 years', color: 'yellow-400' },
   { name: 'TypeScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg', level: 'Advanced', exp: '3 years', color: 'blue-600' },
   { name: 'Tailwind CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', level: 'Advanced', exp: '2 years', color: 'teal-400' },
+  { name: 'Vite', logo: 'https://vitejs.dev/logo.svg', level: 'Advanced', exp: '2 years', color: 'purple-500' },
+
+  // Backend & Server
+  { name: 'Node.js', logo: 'https://icon.icepanel.io/Technology/svg/Node.js.svg', level: 'Expert', exp: '4 years', color: 'green-500' },
+  { name: 'Express.js', logo: 'https://icon.icepanel.io/Technology/png-shadow-512/Express.png', level: 'Advanced', exp: '3 years', color: 'gray-700' },
+  { name:'PHP', logo:'https://i.ibb.co/N2234C7R/new-php-logo.png', level:'Intermediate', exp:'2 years', color: 'teal-400' },
+
+  // Databases & Hosting
   { name: 'MongoDB', logo: 'https://icon.icepanel.io/Technology/svg/MongoDB.svg', level: 'Advanced', exp: '3 years', color: 'green-600' },
   { name: 'Firebase', logo: 'https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png', level: 'Intermediate', exp: '2 years', color: 'amber-400' },
+  { name: 'Vercel', logo: 'https://icon.icepanel.io/Technology/png-shadow-512/Vercel.png', level: 'Intermediate', exp: '2 years', color: 'neutral-900' },
+
+  // Version Control & Tools
   { name: 'Git & GitHub', logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png', level: 'Expert', exp: '5 years', color: 'orange-500' },
-  { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg', level: 'Intermediate', exp: '2 years', color: 'indigo-500' },
-  { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg', level: 'Intermediate', exp: '2 years', color: 'blue-500' },
+
+  // General Purpose Languages
   { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg', level: 'Advanced', exp: '3 years', color: 'yellow-300' },
-  {
-    name:'PHP', logo:'https://i.ibb.co/N2234C7R/new-php-logo.png', level:'Intermediate', exp:'2 years', color: 'teal-400'
-  }
+  { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg', level: 'Intermediate', exp: '2 years', color: 'indigo-500' },
+  { name: 'C++', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg', level: 'Intermediate', exp: '2 years', color: 'blue-500' }
 ];
+
 
 // Tailwind-compatible color to class map
 const colorMap = {
@@ -57,8 +65,8 @@ const SkillCard = ({ logo, name, level, exp, color }) => {
 
 const SkillsGallery = () => {
   return (
-    <div className="mt-10 flex items-center justify-center px-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl">
+    <div className="mt-10 flex items-center justify-center md:px-4">
+      <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-6 gap-10 md:gap-6 max-w-7xl">
         {skills.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}

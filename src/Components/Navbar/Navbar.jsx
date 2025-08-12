@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <div className="relative mt-5 rounded-4xl p-[3px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate-gradient-x shadow-xl ">
+    <div className="  mt-5 rounded-4xl p-[3px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate-gradient-x shadow-xl ">
       <div className="navbar bg-base-100 rounded-4xl p-5">
         <div className="navbar-start">
           {/* dropdown */}
