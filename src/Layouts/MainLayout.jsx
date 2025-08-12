@@ -23,6 +23,15 @@ const MainLayout = () => {
         {/* Banner */}
         <div className="min-h-screen">
           <Banner></Banner>
+          {/* About Me */}
+          <section id="about" >
+            <div className='text-center mb-10'>
+        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
+          About Me
+        </h1>
+      </div>
+            <AboutMe></AboutMe>
+          </section>
           {/* Featured Projects Part */}
           <section id="projects" className=" my-10 ">
             <div className='text-center mb-10'>
@@ -38,15 +47,7 @@ const MainLayout = () => {
           
         </div>
           </section>
-          {/* About Me */}
-          <section id="about" >
-            <div className='text-center mb-10'>
-        <h1 className='pt-5 m-auto mt-10 text-6xl text-primary font-extrabold'>
-          About Me
-        </h1>
-      </div>
-            <AboutMe></AboutMe>
-          </section>
+          
           {/* Technolog */}
           <section id="technology">
             <div className='text-center mb-10'>
