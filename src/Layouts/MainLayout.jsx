@@ -16,7 +16,7 @@ import Experience from "../Components/Experience/Experience";
 const MainLayout = () => {
     const projects=useLoaderData();
   return (
-    <div className="w-3/4 mx-auto logo-font "style={{ scrollPaddingTop: "80px"}}>
+    <div className="lg:w-3/4 px-2 mx-auto logo-font ">
       <PageWrapper>
         <CursorDot></CursorDot>
         <div className="sticky top-0 z-50">
@@ -28,7 +28,7 @@ const MainLayout = () => {
           {/* About Me */}
           <section id="about" >
             <div className='text-center mb-10'>
-        <h1 className="pt-[130px] -mt-[80px] m-auto text-6xl text-primary font-extrabold text-center mb-10">
+        <h1 className="pt-[130px] -mt-[80px] m-auto text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-10">
           About Me
         </h1>
       </div>
@@ -39,7 +39,7 @@ const MainLayout = () => {
           {/* Technolog */}
           <section id="technology">
             <div className='text-center mb-10'>
-        <h1  className="pt-[130px] -mt-[80px] m-auto text-6xl text-primary font-extrabold text-center mb-10">
+        <h1  className="pt-[130px] -mt-[80px] m-auto text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center ">
           Technologies 
         </h1>
       </div>
@@ -54,9 +54,9 @@ const MainLayout = () => {
             <Experience></Experience>
           </section>
            {/* Featured Projects Part */}
-          <section id="projects" className=" my-10 ">
+          <section id="projects" className=" mb-20 ">
             <div className='text-center mb-10'>
-        <h1  className="pt-[130px] -mt-[80px] m-auto text-6xl text-primary font-extrabold text-center mb-10">
+        <h1  className="pt-[130px] -mt-[80px] m-auto text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-10">
           Featured Projects
         </h1>
       </div>
@@ -72,7 +72,7 @@ const MainLayout = () => {
 
           <section id="contact">
             <div className='text-center mb-10'>
-        <h1  className="pt-[80px] -mt-[80px] m-auto  text-6xl text-primary font-extrabold text-center mb-10">
+        <h1  className="pt-[80px] -mt-[80px] m-auto  text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-10">
           Contact Me 
         </h1>
       </div>

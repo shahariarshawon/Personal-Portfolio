@@ -60,6 +60,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
+                <a href="#experience" className="relative group text-gray-800">
+                  Experience
+                  <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+              <li>
                 <a href="#contact" className="relative group text-gray-800">
                   Contact
                   <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
@@ -67,7 +73,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link className=" text-3xl font-bold logo-font hidden md:inline-block">
+          <Link className=" text-2xl font-bold logo-font hidden md:inline-block">
             <span className="text-sky-400">Shahariar</span>
             <span className="text-emerald-400">Arafat</span>
           </Link>
@@ -101,6 +107,12 @@ const Navbar = () => {
             <li>
               <a href="#education" className="relative text-xl group">
                 Education
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#experience" className="relative text-xl group">
+                Experience
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>

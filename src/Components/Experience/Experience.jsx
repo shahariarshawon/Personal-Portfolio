@@ -14,7 +14,7 @@ const experienceData = [
 const Experience = () => {
   return (
     <section className="max-w-3xl mx-auto p-6">
-      <h1 className="pt-5 text-center mb-10  text-6xl text-primary font-extrabold">
+      <h1 className="pt-[130px] -mt-[80px] m-auto text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-10">
         Work Experience
       </h1>
       <div className="relative border-l-4 border-purple-500 ml-6">

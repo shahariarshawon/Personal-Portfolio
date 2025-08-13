@@ -6,7 +6,7 @@ const AboutMe = () => {
     ] text-gray-700 rounded-lg shadow-lg">
      
       <p className="mb-4 text-lg leading-relaxed">
-        I’m <span className="font-semibold">Shahariar Arafat</span>, a passionate Full Stack Developer skilled in crafting modern, scalable, and user-focused applications.
+        I’m <span className="font-semibold">Al Shahariar Arafat Shawon</span>, a passionate Full Stack Developer skilled in crafting modern, scalable, and user-focused applications.
       </p>
       <p className="mb-4 text-lg leading-relaxed">
         My expertise spans the <span className="font-medium">MERN Stack, Next.js, and Laravel</span>, with a strong foundation in React, JavaScript, MongoDB, HTML, CSS, and Tailwind CSS — plus versatility in C, C++, and Python.
