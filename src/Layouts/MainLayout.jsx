@@ -16,7 +16,7 @@ import Experience from "../Components/Experience/Experience";
 const MainLayout = () => {
     const projects=useLoaderData();
   return (
-    <div className="lg:w-3/4 px-2 mx-auto logo-font ">
+    <div className="lg:w-3/4 px-3 md:px-10 mx-auto logo-font ">
       <PageWrapper>
         <CursorDot></CursorDot>
         <div className="sticky top-0 z-50">
@@ -72,7 +72,7 @@ const MainLayout = () => {
 
           <section id="contact">
             <div className='text-center mb-10'>
-        <h1  className="pt-[80px] -mt-[80px] m-auto  text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-10">
+        <h1  className="pt-[80px] -mt-[100px] m-auto  text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-10">
           Contact Me 
         </h1>
       </div>
