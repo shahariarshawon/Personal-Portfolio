@@ -1,30 +1,66 @@
 import { Typewriter } from "react-simple-typewriter";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const Banner = () => {
   return (
-    <div className="mt-10 lg:pb-10 md:mt-20  md:px-10 flex flex-col lg:flex-row items-center justify-center lg:gap-30 gap-10 text-center md:text-left">
-      {/* Left: Image + Social Links */}
-      <div className="flex-shrink-0 flex flex-col items-center gap-4 ">
-        <img
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="mt-12 md:mt-24 px-4 md:px-10 flex flex-col lg:flex-row items-center justify-center gap-12 text-center md:text-left"
+    >
+      {/* Image Section */}
+      <motion.div
+        variants={item}
+        className="flex-shrink-0 flex flex-col items-center gap-6"
+      >
+        <motion.img
           src="https://i.postimg.cc/bN1VRJLq/my-AIImage111.jpg"
           alt="Shahariar Arafat"
-          className="w-48 h-48 md:h-64 md:w-64 lg:h-100 lg:w-100 object-cover rounded-full border-4 border-gradient-to-r from-indigo-500 to-teal-400 shadow-md shadow-fuchsia-300"
+          className="w-52 h-52 md:w-100 md:h-100 object-cover rounded-full 
+                     border-4 border-indigo-500/60 shadow-xl"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         />
+      </motion.div>
 
-       
-      </div>
-
-      {/* Right: Text */}
-      <div className="space-y-6 ">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
+      {/* Text Section */}
+      <div className="space-y-6 max-w-xl">
+        <motion.h1
+          variants={item}
+          className="text-4xl md:text-5xl lg:text-6xl font-extrabold 
+                     bg-gradient-to-r from-indigo-500 to-teal-400 
+                     bg-clip-text text-transparent"
+        >
           Al Shahariar Arafat Shawon
-        </h2>
+        </motion.h1>
 
-        <div className="bg-gradient-to-r from-indigo-500 to-teal-400 px-6 py-3 inline-block rounded-lg text-white text-lg md:text-2xl font-semibold shadow-md">
+        <motion.div
+          variants={item}
+          className="inline-block px-6 py-3 rounded-lg 
+                     bg-gradient-to-r from-indigo-500 to-teal-400 
+                     text-white text-lg md:text-2xl font-semibold shadow-lg"
+        >
           <Typewriter
             words={[
-              "Full Stack Developer",
+              "MERN Stack Developer",
               "Frontend Engineer",
               "PHP Developer",
               "UI/UX Designer",
@@ -36,54 +72,61 @@ const Banner = () => {
             deleteSpeed={50}
             delaySpeed={1000}
           />
-        </div>
+        </motion.div>
 
-       <div>
-       <p className="text-gray-400 text-base md:text-lg mb-4">
-          Passionate about building intuitive and scalable web applications.<br></br> I
-          blend creativity with technical expertise to deliver robust solutions
-          that make a lasting impact.
-        </p>
-        <a
-          href="/resume.pdf"
+        <motion.p
+          variants={item}
+          className="text-gray-400 text-base md:text-lg leading-relaxed"
+        >
+          Passionate about building intuitive and scalable web applications. I
+          combine clean architecture with thoughtful UI to deliver products that
+          actually scale.
+        </motion.p>
+
+        {/* CTA */}
+        <motion.a
+          variants={item}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          href="/Resume-of-AL-Shahariar-Arafat-Shawon-MERN-Stack-Developer.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           download
           className="inline-block px-8 py-3 rounded-full font-semibold text-white 
                      bg-gradient-to-r from-indigo-500 to-teal-400 
-                     hover:scale-105 hover:shadow-xl transition-transform duration-300 
-                     shadow-md border border-white/20"
+                     shadow-lg"
         >
-          📄 Download Resume
-        </a>
-       </div>
-         {/* Social Links */}
-         <div className="flex gap-4 ml-15 md:ml-0">
-          <a
-            href="https://www.linkedin.com/in/shahariar-shawon"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gradient-to-r from-indigo-500 to-teal-400 text-white shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300"
-          >
-            <FaLinkedin size={20} />
-          </a>
-          <a
-            href="https://github.com/shahariarshawon"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gradient-to-r from-indigo-500 to-teal-400 text-white shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300"
-          >
-            <FaGithub size={20} />
-          </a>
-          <a
-            href="https://x.com/Shahariarshaw11"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gradient-to-r from-indigo-500 to-teal-400 text-white shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300"
-          >
-            <FaTwitter size={20} />
-          </a>
-        </div>
+          Download Resume
+        </motion.a>
+
+        {/* Social Icons */}
+        <motion.div
+          variants={item}
+          className="flex gap-5 justify-center md:justify-start pt-4"
+        >
+          {[FaLinkedin, FaGithub, FaTwitter].map((Icon, i) => (
+            <motion.a
+              key={i}
+              whileHover={{ scale: 1.25, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+              href={
+                i === 0
+                  ? "https://www.linkedin.com/in/shahariar-shawon"
+                  : i === 1
+                    ? "https://github.com/shahariarshawon"
+                    : "https://x.com/Shahariarshaw11"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-gradient-to-r from-indigo-500 to-teal-400 
+                         text-white shadow-md"
+            >
+              <Icon size={20} />
+            </motion.a>
+          ))}
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

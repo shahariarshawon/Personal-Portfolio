@@ -126,7 +126,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div>
-            <a href="/resume.pdf" download className="resume-btn">
+            <a
+              href="/Resume-of-AL-Shahariar-Arafat-Shawon-MERN-Stack-Developer.pdf"
+              download
+              className="resume-btn"
+            >
               Resume
             </a>
           </div>
