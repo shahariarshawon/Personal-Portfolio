@@ -32,7 +32,7 @@ const Banner = () => {
         className="flex-shrink-0 flex flex-col items-center gap-6"
       >
         <motion.img
-          src="https://i.postimg.cc/bN1VRJLq/my-AIImage111.jpg"
+          src="https://i.postimg.cc/HWcQCk5T/professional-photo-shawon-(1).jpg"
           alt="Shahariar Arafat"
           className="w-52 h-52 md:w-100 md:h-100 object-cover rounded-full 
                      border-4 border-indigo-500/60 shadow-xl"
@@ -76,9 +76,9 @@ const Banner = () => {
 
         <motion.p
           variants={item}
-          className="text-gray-400 text-base md:text-lg leading-relaxed"
+          className="text-gray-400 text-base md:text-lg leading-relaxed text-justify"
         >
-          Passionate about building intuitive and scalable web applications. I
+          Passionate about building intuitive and scalable web applications.<br></br> I
           combine clean architecture with thoughtful UI to deliver products that
           actually scale.
         </motion.p>

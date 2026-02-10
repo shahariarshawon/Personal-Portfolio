@@ -34,6 +34,20 @@ const skills = [
     exp: "3 years",
     color: "blue-600",
   },
+   {
+    name: "C",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+    level: "Intermediate",
+    exp: "2 years",
+    color: "indigo-500",
+  },
+  {
+    name: "C++",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+    level: "Intermediate",
+    exp: "2 years",
+    color: "blue-500",
+  },
   {
     name: "Tailwind CSS",
     logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
@@ -56,13 +70,6 @@ const skills = [
     level: "Advanced",
     exp: "3 years",
     color: "gray-700",
-  },
-  {
-    name: "Mongoose",
-    logo: "https://mongoosejs.com/docs/images/mongoose5_62x30_transparent.png",
-    level: "Advanced",
-    exp: "3 years",
-    color: "green-600",
   },
   {
     name: "PHP",
@@ -96,7 +103,7 @@ const skills = [
   },
   {
     name: "Prisma",
-    logo: "https://icon.icepanel.io/Technology/svg/Prisma.svg",
+    logo: "https://i.postimg.cc/s2dL5Lr0/icons8-prisma-orm-48.png",
     level: "Intermediate",
     exp: "1.5 years",
     color: "purple-500",
@@ -131,22 +138,14 @@ const skills = [
     exp: "2 years",
     color: "blue-600",
   },
-
-  // Languages
-  {
-    name: "C",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+ {
+    name: "Linux",
+    logo: "https://i.postimg.cc/G2pxDPH5/linux.png",
     level: "Intermediate",
     exp: "2 years",
-    color: "indigo-500",
-  },
-  {
-    name: "C++",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    level: "Intermediate",
-    exp: "2 years",
-    color: "blue-500",
-  },
+    color: "amber-400",
+  }
+ 
 ];
 
 /* =======================

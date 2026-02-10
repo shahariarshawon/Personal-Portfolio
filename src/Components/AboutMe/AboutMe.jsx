@@ -31,26 +31,26 @@ const AboutMe = () => {
       className="max-w-3xl mx-auto p-6 bg-[#ede9fe] text-gray-700 
                  rounded-lg shadow-lg"
     >
-      <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed">
+      <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed text-justify">
         I’m <span className="font-semibold">Al Shahariar Arafat Shawon</span>, a
         passionate Full Stack Developer skilled in crafting modern, scalable,
         and user-focused applications.
       </motion.p>
 
-      <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed">
+      <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed text-justify">
         My expertise spans the{" "}
-        <span className="font-medium">MERN Stack, Next.js, and Laravel</span>,
+        <span className="font-medium"> Next.js,TypeScript,Node.js, and Laravel</span>,
         with a strong foundation in React, JavaScript, MongoDB, HTML, CSS, and
-        Tailwind CSS — plus versatility in C, C++, and Python.
+        Shadcn — plus versatility in C, C++, and Python.
       </motion.p>
 
-      <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed">
+      <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed text-justify">
         Currently, I’m pushing the boundaries of innovation by building a live
-        video streaming platform powered by Machine Learning, blending my love
+        video streaming platform powered by advanced web technology, blending my love
         for cutting-edge tech with real-world problem-solving.
       </motion.p>
 
-      <motion.p variants={paragraph} className="text-lg leading-relaxed">
+      <motion.p variants={paragraph} className="text-lg leading-relaxed text-justify">
         Beyond my current projects, my ambition is to dive deep into the realms
         of Artificial Intelligence and Machine Learning, creating intelligent
         systems that not only solve problems but redefine user experiences.
