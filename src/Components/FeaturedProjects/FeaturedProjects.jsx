@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 function FeaturedProjects({ project }) {
   return (
     <div>
-      <div className="w-[90%] h-auto mb-5 group mx-auto bg-[#C0C9EE] p-2 overflow-hidden rounded-md text-[#2a2a2a] border border-[#b0b9dc]">
+      <div className=" h-auto group bg-[#C0C9EE] p-2 overflow-hidden rounded-md text-[#2a2a2a] border border-[#b0b9dc]">
         {/* FIGURE SECTION */}
         <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
           <figure className="w-full h-80 lg:group-hover:h-72 transition-all duration-300 bg-[#d8def5] p-2 rounded-md relative overflow-hidden">

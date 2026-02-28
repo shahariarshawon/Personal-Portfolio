@@ -34,7 +34,7 @@ const skills = [
     exp: "3 years",
     color: "blue-600",
   },
-   {
+  {
     name: "C",
     logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
     level: "Intermediate",
@@ -138,14 +138,14 @@ const skills = [
     exp: "2 years",
     color: "blue-600",
   },
- {
+  {
     name: "Linux",
     logo: "https://i.postimg.cc/G2pxDPH5/linux.png",
     level: "Intermediate",
     exp: "2 years",
     color: "amber-400",
   }
- 
+
 ];
 
 /* =======================
@@ -211,16 +211,16 @@ const SkillCard = ({ logo, name, level, exp, color }) => {
     <motion.div
       variants={card}
       whileHover={{ y: -6 }}
-      className={`w-36 h-40 bg-violet-100 text-gray-900 rounded-xl 
-                  shadow-md text-center p-3 border-2 border-transparent 
+      className={`w-52 h-52 bg-violet-100 text-gray-900 rounded-xl 
+                  shadow-md text-center p-5 border-2 border-transparent 
                   ring-0 transition-all duration-300 ${colorClasses}`}
     >
-      <img src={logo} alt={name} className="w-10 h-10 mx-auto mb-2" />
-      <h3 className="text-sm font-semibold">{name}</h3>
-      <span className="inline-block text-green-700 bg-white text-xs font-medium px-2 py-0.5 rounded-full mt-1">
+      <img src={logo} alt={name} className="w-10 h-10 mx-auto mb-6" />
+      <h3 className="font-semibold">{name}</h3>
+      <span className="inline-block text-green-700 bg-white  font-medium px-2 py-0.5 rounded-full mt-1">
         ● {level}
       </span>
-      <p className="text-xs text-gray-600 font-medium mt-1">{exp} exp</p>
+      <p className=" text-gray-600 font-medium mt-1">{exp} exp</p>
     </motion.div>
   );
 };
@@ -232,9 +232,9 @@ const SkillsGallery = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="mt-12 flex items-center justify-center px-4"
+      className=" mt-12 flex items-center justify-center px-4"
     >
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl">
+      <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl">
         {skills.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}

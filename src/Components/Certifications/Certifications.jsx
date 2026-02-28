@@ -34,7 +34,7 @@ const item = {
 
 const Certifications = () => {
   return (
-    <section className="max-w-3xl mx-auto p-6">
+    <section className="">
       <h1 className="pt-[130px] -mt-[80px] text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-12">
         Certifications
       </h1>
@@ -61,12 +61,14 @@ const Certifications = () => {
                 {cert.title}
               </h3>
 
-              <p className="text-gray-700 font-medium">
+              <p className="text-gray-700 text-lg font-medium">
                 {cert.institution} &nbsp;|&nbsp;
                 <span className="italic">{cert.year}</span>
               </p>
 
-              <p className="mt-2 text-gray-600 font-semibold">{cert.result}</p>
+              <p className="mt-2 text-gray-600 text-lg font-semibold">
+                {cert.result}
+              </p>
             </div>
           </motion.div>
         ))}

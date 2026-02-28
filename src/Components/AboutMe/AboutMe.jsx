@@ -28,7 +28,7 @@ const AboutMe = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-100px" }}
-      className="max-w-3xl mx-auto p-6 bg-[#ede9fe] text-gray-700 
+      className="max-w-6xl mx-auto p-6 bg-[#ede9fe] text-gray-700 
                  rounded-lg shadow-lg"
     >
       <motion.p variants={paragraph} className="mb-4 text-lg leading-relaxed text-justify">

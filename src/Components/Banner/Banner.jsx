@@ -24,7 +24,7 @@ const Banner = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="mt-12 md:mt-24 px-4 md:px-10 flex flex-col lg:flex-row items-center justify-center gap-12 text-center md:text-left"
+      className="max-w-6xl mx-auto mt-12 md:mt-24 px-4 flex flex-col lg:flex-row items-center justify-center gap-20 text-center md:text-left"
     >
       {/* Image Section */}
       <motion.div

@@ -32,7 +32,7 @@ const cardVariants = {
 
 const Experience = () => {
   return (
-    <section className="max-w-3xl mx-auto p-6">
+    <section className="">
       <h1 className="pt-[130px] -mt-[80px] text-3xl md:text-4xl lg:text-5xl text-primary font-extrabold text-center mb-12">
         Work Experience
       </h1>
@@ -59,12 +59,12 @@ const Experience = () => {
                 {job.position}
               </h3>
 
-              <p className="text-gray-700 font-medium mt-1">
+              <p className="text-gray-700 text-lg font-medium mt-1">
                 {job.company} &nbsp;|&nbsp;
                 <span className="italic">{job.duration}</span>
               </p>
 
-              <p className="mt-4 text-gray-600 leading-relaxed">
+              <p className="mt-4 text-gray-600 leading-relaxed text-lg">
                 {job.description}
               </p>
             </div>

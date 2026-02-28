@@ -31,7 +31,7 @@ const ContactSection = () => {
 
   return (
     <section className="mb-10 text-center px-4">
-      <div className="max-w-md mx-auto bg-violet-100 text-black rounded-xl shadow-lg p-8">
+      <div className="bg-violet-100 text-black rounded-xl shadow-lg p-8">
         {/* Heading */}
         <h2 className="text-2xl font-bold mb-6">Let's Get in Touch</h2>
 
@@ -42,14 +42,14 @@ const ContactSection = () => {
             name="user_email"
             placeholder="Your Email"
             required
-            className="w-full px-4 py-2 mb-4 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
+            className="w-full px-10 py-5 mb-4 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
           />
           <textarea
             name="message"
             rows="4"
             placeholder="Your Message"
             required
-            className="w-full px-4 py-2 mb-4 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
+            className="w-full px-10 py-5 mb-6 border bg-gray-100 text-black border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
           />
 
           <button
