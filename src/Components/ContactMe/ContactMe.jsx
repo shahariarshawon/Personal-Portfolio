@@ -30,7 +30,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="mb-10 text-center px-4">
+    <section className="w-3/5 mx-auto mb-10 text-center px-4">
       <div className="bg-violet-100 text-black rounded-xl shadow-lg p-8">
         {/* Heading */}
         <h2 className="text-2xl font-bold mb-6">Let's Get in Touch</h2>
@@ -54,9 +54,9 @@ const ContactSection = () => {
 
           <button
             type="submit"
-            class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-lg shadow-md group"
+            class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#00809d] rounded-lg shadow-md group"
           >
-            <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+            <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#00809d] group-hover:translate-x-0 ease">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -72,7 +72,7 @@ const ContactSection = () => {
                 ></path>
               </svg>
             </span>
-            <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+            <span class="absolute flex items-center justify-center w-full h-full text-[#00809d] transition-all duration-300 transform group-hover:translate-x-full ease">
               Send Message
             </span>
             <span class="relative invisible">Send Message</span>

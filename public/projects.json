@@ -19,6 +19,15 @@
   },
   {
     "id": "3",
+    "title": "Learn with Shahariar",
+    "description": "A learning platform for the students to master MERN stack from basic to advanced knowledge.",
+    "stack": "React, MongoDB, Express, Node.js, TailwindCSS, Firebase Authentication",
+    "liveLink": "https://learn-with-shahariar.vercel.app",
+    "githubLink": "#",
+    "image": "https://i.postimg.cc/q7ntb1Hq/Screenshot-2026-05-10-013108.png"
+  },
+  {
+    "id": "4",
     "title": "Daily Drafts",
     "description": "Explore insightful blogs, write your own, and be a part of an ever-growing community of thinkers.",
     "stack": "React, MongoDB, Express, Node.js, TailwindCSS, Firebase Authentication",

@@ -31,7 +31,7 @@ const Banner = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="mt-8 md:mt-16 lg:mt-20 px-4 md:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 max-w-7xl mx-auto"
+      className="mt-8 md:mt-16 lg:mt-20 px-4 md:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 max-w-6xl mx-auto"
     >
       {/* Image Section */}
       <motion.div variants={item} className="flex-shrink-0 order-1 lg:order-2">
@@ -72,10 +72,11 @@ const Banner = () => {
           <div className="inline-flex items-center justify-center lg:justify-start px-5 py-3 md:px-7 md:py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-teal-500 text-white text-base md:text-xl lg:text-2xl font-semibold shadow-lg min-h-[3.5rem]">
             <Typewriter
               words={[
+                "Backend Developer",
+                "Software Engineer",
                 "MERN Stack Developer",
-                "Frontend Engineer",
-                "PHP Developer",
-                "UI/UX Designer",
+                "Full Stack Developer",
+                
               ]}
               loop={0}
               cursor

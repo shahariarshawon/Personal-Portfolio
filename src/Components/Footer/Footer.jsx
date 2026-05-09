@@ -13,7 +13,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-gray-400 text-sm max-w-xs mx-auto lg:mx-0">
-            A passionate MERN Stack Developer
+            A passionate Full Stack Developer
           </p>
         </div>
 

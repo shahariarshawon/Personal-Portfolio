@@ -55,7 +55,6 @@ const skills = [
     exp: "2 years",
     color: "teal-400",
   },
-
   // Backend
   {
     name: "Node.js",
@@ -78,7 +77,6 @@ const skills = [
     exp: "2 years",
     color: "teal-400",
   },
-
   // Databases
   {
     name: "MongoDB",
@@ -108,7 +106,6 @@ const skills = [
     exp: "1.5 years",
     color: "purple-500",
   },
-
   // Tools
   {
     name: "Firebase",
@@ -144,12 +141,11 @@ const skills = [
     level: "Intermediate",
     exp: "2 years",
     color: "amber-400",
-  }
-
+  },
 ];
 
 /* =======================
-   Hover Color Map (unchanged)
+   Hover Color Map
 ======================= */
 const colorMap = {
   "green-500":
@@ -210,17 +206,52 @@ const SkillCard = ({ logo, name, level, exp, color }) => {
   return (
     <motion.div
       variants={card}
-      whileHover={{ y: -6 }}
-      className={`w-52 h-52 bg-violet-100 text-gray-900 rounded-xl 
-                  shadow-md text-center p-5 border-2 border-transparent 
-                  ring-0 transition-all duration-300 ${colorClasses}`}
+      whileHover={{ y: -6, scale: 1.03 }}
+      className={`
+        w-full
+        h-auto
+        min-h-[160px]
+        sm:min-h-[180px]
+        md:min-h-[200px]
+        bg-violet-100 
+        text-gray-900 
+        rounded-xl 
+        shadow-md 
+        text-center 
+        p-4
+        sm:p-5
+        md:p-6
+        border-2 
+        border-transparent 
+        ring-0 
+        transition-all 
+        duration-300 
+        flex
+        flex-col
+        items-center
+        justify-center
+        ${colorClasses}
+      `}
     >
-      <img src={logo} alt={name} className="w-10 h-10 mx-auto mb-6" />
-      <h3 className="font-semibold">{name}</h3>
-      <span className="inline-block text-green-700 bg-white  font-medium px-2 py-0.5 rounded-full mt-1">
+      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-3 sm:mb-4 flex items-center justify-center">
+        <img 
+          src={logo} 
+          alt={name} 
+          className="w-full h-full object-contain" 
+        />
+      </div>
+      
+      <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-2">
+        {name}
+      </h3>
+      
+      <span className="inline-block text-green-700 bg-white text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full mb-2">
         ● {level}
       </span>
-      <p className=" text-gray-600 font-medium mt-1">{exp} exp</p>
+      
+      <p className="text-xs sm:text-sm text-gray-600 font-medium">
+        {exp} exp
+      </p>
     </motion.div>
   );
 };
@@ -231,10 +262,23 @@ const SkillsGallery = () => {
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
-      className=" mt-12 flex items-center justify-center px-4"
+      viewport={{ once: true, margin: "-50px" }}
+      className="mt-8 sm:mt-10 md:mt-12 px-3 sm:px-4 md:px-6 lg:px-8"
     >
-      <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl">
+      <div className="
+        grid 
+        grid-cols-2 
+        sm:grid-cols-3 
+        md:grid-cols-4 
+        lg:grid-cols-5 
+        xl:grid-cols-6
+        gap-3
+        sm:gap-4
+        md:gap-5
+        lg:gap-6
+        max-w-7xl
+        mx-auto
+      ">
         {skills.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}

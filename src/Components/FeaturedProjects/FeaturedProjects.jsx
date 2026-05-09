@@ -1,5 +1,6 @@
 import React from "react";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 function FeaturedProjects({ project }) {
   return (
@@ -33,35 +34,25 @@ function FeaturedProjects({ project }) {
             <span className="font-bold">Stack:</span> {project.stack}
           </p>
 
-          <div className="flex gap-4 pt-2">
-            {/* Visit Link */}
+          {/* Action Buttons */}
+          <div className="flex gap-3 pt-4">
             <a
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-base text-[#6a73b8] font-medium flex gap-1 transition-all duration-300
-                lg:opacity-0 lg:translate-y-2 lg:group-hover:opacity-50 lg:group-hover:translate-y-0
-                opacity-100 translate-y-0
-              "
+              className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-300 text-sm font-medium"
             >
-              Visit
-              <ChevronRight />
+              <ExternalLink size={16} />
+              Live Demo
             </a>
-
-            {/* GitHub Link */}
             <a
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-base text-[#6a73b8] font-medium flex gap-1 transition-all duration-300
-                lg:opacity-0 lg:translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0
-                opacity-100 translate-y-0
-              "
+              className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 text-sm font-medium"
             >
-              GitHub
-              <ChevronRight />
+              <FaGithub size={16} />
+              Code
             </a>
           </div>
         </article>
